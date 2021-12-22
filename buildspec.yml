@@ -1,5 +1,8 @@
 version: 0.2
 
+env:
+  SomeVar: someVar
+
 phases:
   install:
     runtime-versions:
