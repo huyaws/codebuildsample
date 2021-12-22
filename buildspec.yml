@@ -1,8 +1,5 @@
 version: 0.2
 
-env:
-  SomeVar: someVar
-
 phases:
   install:
     runtime-versions:
@@ -17,6 +14,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - echo ${SomeVar}
 artifacts:
   files:
     - target/messageUtil-1.0.jar
