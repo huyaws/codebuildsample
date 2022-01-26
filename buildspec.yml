@@ -15,7 +15,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo ${SomeVar}
-      - echo $CODEBUILD_SOURCE_VERSION
+      - echo "Commit Id = ${CODEBUILD_RESOLVED_SOURCE_VERSION}"
 artifacts:
   files:
     - target/messageUtil-1.0.jar
